@@ -36,28 +36,6 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/when01" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="visit kyiv.gdg.org.ua"
-                android:id="@+id/txtAdGDG"
-                android:layout_above="@+id/imageView"
-                android:layout_centerHorizontal="true" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/relIntro">
 
@@ -80,19 +58,6 @@
                 android:layout_alignParentEnd="true" />
 
         </RelativeLayout><!--Intro-->
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/linGreeting">
-
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lstGreeting" />
-        </LinearLayout><!--Greeting-->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -130,49 +95,6 @@
                 android:layout_alignEnd="@+id/imgDress02"
                 android:src="@drawable/dress05" />
         </RelativeLayout><!--Dressess-->
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/relTarget">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imgGuy01"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:src="@drawable/guy07"
-                android:onClick="guyClick" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imgGuy02"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/guy02"
-                android:onClick="guyClick" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imgGuy03"
-                android:src="@drawable/guy04"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:onClick="guyClick" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imgGuy04"
-                android:src="@drawable/guy05"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:onClick="guyClick" />
-        </RelativeLayout><!--Target-->
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -215,6 +137,79 @@
                 android:layout_above="@+id/chbQA"
                 android:layout_centerHorizontal="true" />
         </RelativeLayout><!--Events-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relTarget">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgGuy01"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/guy07"
+                android:onClick="guyClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgGuy02"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/guy02"
+                android:onClick="guyClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgGuy03"
+                android:src="@drawable/guy04"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:onClick="guyClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgGuy04"
+                android:src="@drawable/guy05"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="guyClick" />
+        </RelativeLayout><!--Target-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linGreeting">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstGreeting" />
+        </LinearLayout><!--Greeting-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/when01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="visit kyiv.gdg.org.ua"
+                android:id="@+id/txtAdGDG"
+                android:layout_above="@+id/imageView"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout><!--When-->
 
     </ViewFlipper>
 
