@@ -9,71 +9,117 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.developerstudyjams.veitsi.appboyhunting.MainActivity">
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="nextStage"
+        android:id="@+id/button"
+        android:onClick="order"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/txtStatus" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/txtStatus"
-        android:layout_centerHorizontal="true"
-        android:onClick="order" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Please, press nextPage to start"
+        android:id="@+id/txtStatus"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
 
     <ViewFlipper
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/viewFlipper" >
-
-    </ViewFlipper>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible">
+        android:layout_height="400dp"
+        android:id="@+id/viewFlipper"
+        android:layout_above="@+id/txtStatus"
+        android:layout_centerHorizontal="true" >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#0b0104"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true">
+            android:layout_height="match_parent"
+            android:id="@+id/relTarget">
 
-            <Button
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="btn2"
-                android:id="@+id/button2" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button3" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button4"
+                android:id="@+id/imageView"
                 android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/guy07" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/guy02" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/guy04"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/guy05"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true" />
         </RelativeLayout>
-    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relEvents">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to improve Java performance"
+                android:id="@+id/chbJava"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swinger party"
+                android:id="@+id/chbSwingers"
+                android:layout_above="@+id/chbJava"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QA for beginners"
+                android:id="@+id/chbQA"
+                android:layout_above="@+id/chbSwingers"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="What is good event for meeting?"
+                android:id="@+id/txtWhichEvent"
+                android:layout_above="@+id/chbQA"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relDresses"></RelativeLayout>
+    </ViewFlipper>
 
 </RelativeLayout>
