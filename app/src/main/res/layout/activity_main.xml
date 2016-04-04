@@ -100,42 +100,10 @@
             android:layout_height="match_parent"
             android:id="@+id/relEvents">
 
-            <CheckBox
+            <ListView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="How to improve Java performance"
-                android:id="@+id/chbJava"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:checked="false"
-                android:onClick="EventClick" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Swinger party"
-                android:id="@+id/chbSwingers"
-                android:layout_above="@+id/chbJava"
-                android:layout_alignParentStart="true"
-                android:checked="false" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="QA for beginners"
-                android:id="@+id/chbQA"
-                android:layout_above="@+id/chbSwingers"
-                android:layout_alignParentStart="true"
-                android:checked="false" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="What is good event for meeting?"
-                android:id="@+id/txtWhichEvent"
-                android:layout_above="@+id/chbQA"
-                android:layout_centerHorizontal="true" />
+                android:id="@+id/lstEvents" />
         </RelativeLayout><!--Events-->
         <RelativeLayout
             android:layout_width="match_parent"
