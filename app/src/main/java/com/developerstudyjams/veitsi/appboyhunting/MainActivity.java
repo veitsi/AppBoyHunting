@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        // используем адаптер данных
         ArrayAdapter<String> greetAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, greetings);
         lstGreetings.setAdapter(greetAdapter);
         lstGreetings.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -66,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void order(View view) {
+    public void nextClick(View view){
+        nextStage();
+    }
+
+    public void nextStage() {
         display("some text");
         if (stage < 5) {
             stage += 1;
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             viewFlipper.showNext();
             divider = 1;
         }
-
     }
 
     public void nextView(View view) {
@@ -88,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void eventClick(View view) {
+        score+=20.0f;
         switch (view.getId()) {
+
         }
     }
 

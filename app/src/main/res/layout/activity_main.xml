@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="next Stage"
         android:id="@+id/btnNext"
-        android:onClick="order"
+        android:onClick="nextClick"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -34,6 +34,17 @@
         android:layout_above="@+id/txtStatus"
         android:layout_centerHorizontal="true" >
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relEvents">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstEvents"
+                android:onClick="eventClick" />
+        </RelativeLayout><!--Events-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -95,16 +106,7 @@
                 android:layout_alignEnd="@+id/imgDress02"
                 android:src="@drawable/dress05" />
         </RelativeLayout><!--Dressess-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/relEvents">
 
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/lstEvents" />
-        </RelativeLayout><!--Events-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
